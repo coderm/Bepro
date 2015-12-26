@@ -1,0 +1,46 @@
+@body-background: #E7E7E7;
+
+/* list of base colors */
+@base-color: #2F9FDF;
+    @base-default: #FFFFFF;
+    @base-primary: #2F9FDF;
+    @base-success: #95B75D;
+    @base-info: #428BCA;
+    @base-warning: #F3C022;
+    @base-danger: #D9534F;
+
+/* Navigation settings */
+    @navigation-width: 250px;
+    @navigation-background: #33414E;
+    
+        @navigation-item-background-hover: lighten(@navigation-background, 3%);
+        @navigation-item-background-active: @base-color;
+        @navigation-item-active-color: #FFF;
+/* eof navigation settings */
+
+/* Sidebar settings */
+    @sidebar-width: 250px;
+    @sidebar-background: @navigation-background;
+/* eof sidebar settings */
+
+/* Head settings */
+    @head-height: 50px;
+    @head-background: #FFF;
+        @head-color: #33414E;
+/* eof head settings */
+
+/* Content settings */
+@content-background: #F5F5F5;
+
+@content-block-background: #FFFFFF;
+        @content-block-head-background: #FFFFFF;
+        @content-block-head-color: #464646;
+        @content-block-border-color: #E5E5E5;    
+
+    @page-toolbar-background: #FFFFFF;
+        @page-toolbar-border-color: @content-block-border-color;
+/* eof content settings */
+
+/* Rest */
+@list-item-controls-background: #F5F5F5;
+/* eof rest */

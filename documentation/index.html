@@ -1,0 +1,748 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Be Pro - Documentation</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Dmitry Ivaniuk">
+	<meta name="copyright" content="Dmitry Ivaniuk">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-12-21T00:00:00+01:00">
+
+        
+        
+        <link rel="stylesheet" href="css/shCoreDefault.css"  media="all"/>     
+        <link rel="stylesheet" href="css/shThemeDefault.css"  media="all"/>                
+        
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	        
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>	        
+        
+        <script src="js/shCore.js"></script>
+	
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+        
+
+        
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>		
+		::-moz-selection{background:#BBBBBB;color:#222222;}
+		::selection{background:#BBBBBB;color:#222222;}		
+		a{color:#335A85;}
+		hr{border-top: 1px solid #666; border-bottom:1px solid #FFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background: url("css/img/bt_cubs.png") left top repeat #1D2939;color:#FFF;}
+		#documenter_sidebar ol a{}
+		#documenter_sidebar ol{}
+		#documenter_sidebar ol a{border-top:1px solid #1D2939;border-bottom:1px solid transparent;color:#FFF;}
+		#documenter_sidebar ol a:hover{background: url("css/img/bt_cubs_a.png") left top repeat #1D2939;color:#FFF;border-top:1px solid #1D2939;}
+		#documenter_sidebar ol a.current{background: url("css/img/bt_cubs_a.png") left top repeat #1D2939;color:#FFF;border-top:1px solid #1D2939;}                
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+                #documenter_copyright a{color: #fff;}
+                .abtn{display: block; float: left; padding: 10px; color: #333; border: 1px solid #CCC; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+                    .abtn:hover{text-decoration: none; background: #F1F1F1;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>						
+			<li><a href="#html_structure">HTML structure</a></li>
+			<li><a href="#css_structure">CSS structure</a></li>
+			<li><a href="#javascript_structure">Javascript structure</a></li>                        
+			<li><a href="#how_to">How-to...?</a></li>                        
+                        <li><a href="#credits">Credits</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+		</ol>
+		<div id="documenter_copyright">Copyright Dmitry Ivaniuk 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+            <h1>Be Pro - Documentation</h1><h2>Clean and responsive flat design</h2><hr><ul><li>Created: 06/05/2014</li><li>latest Update: 06/05/2014</li><li>Email: <a href="mailto:aqvatarius@ukr.net">aqvatarius@ukr.net</a></li></ul>
+            <a href="#hts" class="abtn">How to start use template?</a>
+        </section>
+
+        
+<section id="html_structure">
+	<h3>HTML structure</h3><hr class="notop">
+        <h4>Structure of default document</h4>
+<pre class="brush: xml">
+
+    
+    <div class="page-container"><!-- page wrapper -->
+
+        <div class="page-head"></div><!-- page header wrapper -->
+        <div class="page-navigation"></div><!-- page navigation wrapper -->
+        <div class="page-content"></div><!-- page content wrapper -->
+        <div class="page-sidebar"></div><!-- page sidebar -->
+
+    </div>
+
+</pre>        
+               
+        <h4>Header structure</h4>
+        
+<pre class="brush: xml">
+
+    <div class="page-head">
+                
+        <ul class="page-head-elements"><!-- Head elements such as buttons -->
+            <li><!-- nem element -->
+                <a href="#"><!-- link(button) -->
+                    <span class="fa fa-bars"></span><!-- icon -->
+                </a>
+            </li><!-- end of element -->
+            <li class="search"><!-- new serach element -->
+                <input type="text" class="form-control" placeholder="Search..."/><!-- search input -->
+            </li><!-- end of element -->
+        </ul>
+        
+    </div>
+
+</pre>          
+
+<h4>Navigation structure</h4>
+        
+<pre class="brush: xml">
+
+    <div class="page-navigation">                
+        <div class="page-navigation-info"><!-- navigation info block -->
+            <a href="index.html" class="logo">Your logo text</a><!-- Your logo link -->
+        </div>
+        <div class="profile"></div><!-- profile block -->
+        <ul class="navigation"></ul><!-- page navigation(menu) -->
+    </div>
+
+</pre>          
+<p>Add class <code>.page-navigation-closed</code> to <code>.page-navigation</code> to get closed navigation by default.</p>
+<h4>Content structure</h4>
+        
+<pre class="brush: xml">
+
+    <div class="page-content">
+
+        <div class="container"><!-- content wrapper with scroll -->
+            
+            <div class="page-toolbar"></div><!-- page toolbar with title, subtitle, breadcrumb etc. -->
+            
+            <div class="row"><!-- your content using grid -->
+                <div class="col-md-*"></div>
+            </div>            
+            
+        </div>        
+    </div>
+
+</pre> 
+<p>Add class <code>.page-boxed</code> to <code>page-content</code> to set layout boxed</p>
+
+
+<h4>Sidebar structure</h4>
+        
+<pre class="brush: xml">
+
+    <div class="page-sidebar">
+        <div class="sidebar-heading"><i class="fa fa-user"></i> Header Text</div><!-- sidebar title -->
+        <div class="sidebar-title">Subtitle</div><!-- sidebar subtitle -->
+        <!-- your content here -->        
+    </div>
+
+</pre> 
+
+<h4>Navigation levels structure(Menu)</h4>
+        
+<pre class="brush: xml">
+
+     <ul class="navigation">
+        <li><!-- multilevel item -->
+            <a href="index.html"><!-- link -->
+                <i class="fa fa-dashboard"></i><!-- icon -->
+                Link name
+            </a><!-- end of link -->
+            <ul><!--second level(childs) start -->
+                <!-- content same as first level -->
+            </ul>            
+        </li><!-- end of item -->
+    </ul>
+
+</pre>
+
+<h4>Navigation levels structure(Menu)</h4>
+        
+<pre class="brush: xml">
+
+     <ul class="navigation">
+        <li><!-- multilevel item -->
+            <a href="index.html"><!-- link -->
+                <i class="fa fa-dashboard"></i><!-- icon -->
+                Link name
+            </a><!-- end of link -->
+            <ul><!--second level(childs) start -->
+                <!-- content same as first level -->
+            </ul>            
+        </li><!-- end of item -->
+    </ul>
+
+</pre>
+<p>Add class <code>.active</code> to li tag, to get active element.</p>
+
+<h4>Block structure</h4>        
+<pre class="brush: xml">
+
+    <div class="block"><!-- new block element -->
+        <div class="block-head"><!-- block head -->
+            <div class="block-title"></div><!-- block title -->
+            <ul class="buttons"></ul><!-- block buttons -->
+        </div>
+        <div class="block-content">Your content here</div><!-- block content -->
+        <div class="block-footer"></div><!-- block footer -->
+    </div>
+
+</pre>
+<p>Add class <code>.block-transparent</code> to class block, to get transparent block.</p>
+
+<h4>Widget-Window structure</h4>        
+<pre class="brush: xml">
+
+    <div class="widget-window"><!-- new WidgetWindow -->
+        <div class="window"><!-- full width window with padding -->
+            <div class="window-title">Title</div><!-- Window title -->
+        </div>    
+        <div class="window"><!-- full width window with padding -->
+            <div class="window-block"><!-- Block without padding(only right) and liquid width -->
+                Your content
+            </div>            
+        </div>
+    </div>
+
+</pre>
+<p>Use classes <code>.window-info, .window-danger, .window-warning, .window-primary, .window-dark</code> to set background color of window.</p>
+
+<h4>Widget structure</h4>        
+<pre class="brush: xml">
+
+    <div class="widget"><!-- new widget element -->
+        <div class="widget-container"><!-- main info container -->
+            <div class="widget-text"></div><!-- widget title -->
+            <div class="widget-chart"></div><!-- widget chart -->
+        </div>
+        <div class="widget-content"><!-- widget description -->
+            <div class="widget-text"></div><!-- description line -->
+        </div>
+    </div>
+
+</pre>
+<p>Use classes <code>.widget-info, .widget-danger, .widget-warning, .widget-primary, .widget-dark</code> to set background color of widget.</p>
+
+<h4>Q-Button structure</h4>        
+<pre class="brush: xml">
+
+    <a href="#" class="q-button"><!-- New quick access button -->
+        <div class="q-button-icon"><!-- icon wrapper -->
+            <i class="fa fa-envelope-o"></i><!-- icon -->
+        </div>
+        <div class="q-button-text">text</div><!-- text -->                          
+        <div class="informer">1</div><!-- informer -->
+    </a>
+
+</pre>
+
+<h4>Informer structure</h4>        
+<pre class="brush: xml">
+
+    <div class="informer">1</div>
+
+</pre>
+<p>Add <code>.informer-pulsate</code> to get pulsate informer. Add <code>.informer-info, .informer-danger, .informer-success, .informer-warning, .informer-primary</code> to chage border-color.</p>
+
+<h4>List structure</h4>        
+<pre class="brush: xml">
+
+    <div class="list"><!-- new list element -->
+                                    
+        <div class="list-item"><!-- list item -->
+            <div class="list-item-content"></div><!-- list item content -->                
+            <div class="list-item-controls"></div><!-- list item controls -->
+        </div><!-- end of item -->
+
+    </div>
+
+</pre>
+<p>If added <code>.list-item-controls</code> listener automaticaly work onClick <code>.list-item</code>. If you need to use another trigger, use <code>.list-item-trigger</code> only inside list-item.</p>
+
+<h4>Timeline structure</h4>        
+<pre class="brush: xml">
+
+    <div class="timeline"><!-- new timeline -->
+        
+        <div class="timeline-event"><!-- new timeline item -->
+            <div class="timeline-date"><!-- item date -->
+                <div><!-- item date wrapper -->
+                    <span>18</span><!-- day -->
+                    Jan<!-- month -->
+                </div><!-- end of wrapper -->
+            </div><!-- end of item date -->
+        </div><!-- end of timeline item -->
+        
+        <div class="timeline-event"><!-- new timeline item -->
+            <div class="timeline-event-icon"><!-- item icon wrapper -->
+                <i class="fa fa-picture-o"></i><!-- icon -->
+            </div><!-- end of icon wrapper -->
+            <div class="timeline-event-content"><!-- item content -->
+                <div class="event-title">New images in gallery</div><!-- item title -->
+                <p></p><!-- item content -->
+                <div class="event-date"></div><!-- item date -->
+            </div><!-- end of ite content -->
+        </div><!-- end of timeline item -->        
+        
+    </div>
+
+</pre>
+
+</section>
+<section id="css_structure">
+	<h3>CSS structure</h3><hr class="notop">
+        <p>In downloaded package you will find <strong>styles.less</strong> this is the main LESS file that includes:</p>
+<pre class="brush: css">        
+    @charset "UTF-8";
+
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic-ext);
+
+    @import "jquery/jquery-ui.min.css";
+    @import "bootstrap/bootstrap.min.css";
+    @import "fontawesome/font-awesome.min.css";
+    @import "mcustomscrollbar/jquery.mCustomScrollbar.css";
+    @import "select2/select2.css";
+    @import "icheck/flat.css";
+    @import "summernote/summernote.css";
+    @import "codemirror/codemirror.css";
+    @import "bootstrap-editable/bootstrap-editable.css";
+    @import "rickshaw/rickshaw.css";
+    @import "fancybox/jquery.fancybox.css";
+    @import "fullcalendar/fullcalendar.css";
+    @import "dropzone/dropzone.css";
+
+    @import "mystyles.css";
+
+    /* variables */
+    /* functions */
+    
+    /* template css */
+
+    
+        
+</pre>        
+        <ul>
+            <li><strong>jquery/jquery-ui.min.css</strong> - jQuery UI custom stylesheets</li>
+            <li><strong>bootstrap/bootstrap.min.css</strong> - bootstrap stylesheets</li>            
+            <li><strong>fontawesome/font-awesome.min.css</strong> - font awesome icons stylesheets</li>            
+            <li><strong>mcustomscrollbar/jquery.mCustomScrollbar.css</strong> - Custom scrollbar stylesheets</li>
+            <li><strong>select2/select2.css</strong> - Select2 stylesheets</li>
+            <li><strong>icheck/flat.css</strong> - iCheck plugin stylesheets</li>
+            <li><strong>summernote/summernote.css</strong> - Summernote WYSIWYG editor stylesheets</li>
+            <li><strong>codemirror/codemirror.css</strong> - Codemirror stylesheets</li>
+            <li><strong>bootstrap-editable/bootstrap-editable.css</strong> - Bootstrap Editable form stylesheets</li>
+            <li><strong>rickshaw/rickshaw.css</strong> - Rickshaw charts stylesheets</li>             
+            <li><strong>fancybox/jquery.fancybox.css</strong> - fancybox plugin stylesheets</li>
+            <li><strong>fullcalendar/fullcalendar.css</strong> - Fullcalendar plugin stylesheets</li>
+            <li><strong>dropzone/dropzone.css</strong> - Dropzone plugin stylesheets</li>
+            <li><strong>mystyles.css</strong> - Your own styles</li>                                    
+        </ul>
+        
+<p>Please use file <code>mystyles.css</code> for your own stylesheets. It's easiest way to update template in future.</p>
+        
+</section>
+        
+<section id="javascript_structure">
+	<h3>Javascript structure</h3><hr class="notop">
+
+        <h4>Basics</h4>
+        
+<pre class="brush: xml">    
+    &lt;script type="text/javascript" src="js/plugins/jquery/jquery.min.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js">&lt;/script>
+
+    <!-- your javascripts -->
+
+    &lt;script type="text/javascript" src="js/plugins.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/actions.js">&lt;/script>     
+</pre>        
+        <p>This is main JS files that you should use in blank page.</p>
+      
+<h4>Sparkline charts plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/sparkline/jquery.sparkline.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use sparkline charts</p>
+        
+<h4>Fancybox plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/fancybox/jquery.fancybox.pack.js'>&lt;/script>
+</pre>
+<p>Allows you to use popup preview of large image</p>        
+        
+<h4>Rickshaw plugin</h4>
+<pre class="brush: xml">                            
+        &lt;script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js">&lt;/script>
+        &lt;script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js">&lt;/script>        
+</pre>
+<p>Allows you to use Rickshaw charts</p>
+
+<h4>Knob plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/knob/jquery.knob.js'>&lt;/script>
+</pre>
+<p>Allows you to use knob circle charts</p>
+
+<h4>Daterangepicker plugin</h4>
+<pre class="brush: xml">                    
+&lt;script type="text/javascript" src="js/plugins/daterangepicker/moment.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js">&lt;/script>         
+</pre>
+<p>Allows you to use daterangepicker plugin</p>
+
+<h4>jVctorMap plugin</h4>
+<pre class="brush: xml">                    
+&lt;script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'>&lt;/script>
+&lt;script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-europe-mill-en.js'>&lt;/script>
+</pre>
+<p>Allows you to use jvectormaps plugin</p>
+
+<h4>Notify plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/noty/jquery.noty.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/noty/layouts/topCenter.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/noty/layouts/topLeft.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/noty/layouts/topRight.js'>&lt;/script>    
+    &lt;script type='text/javascript' src='js/plugins/noty/themes/default.js'>&lt;/script>
+</pre>
+<p>Allows you to use notify massages. Also check official site of plugin to get more information about usage(direction etc.)</p>
+
+<h4>Custom scrollbar</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use custom content scroller</p>        
+        
+<h4>Select2 plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/select2/select2.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use custom select element(custom design of select/select:multiple with search)</p>
+
+<h4>Tags input plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/tagsinput/jquery.tagsinput.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use field with tags</p>
+
+<h4>Timepicker addon</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/jquery/jquery-ui-timepicker-addon.js'>&lt;/script>
+</pre>
+<p>Allows you to use addon for jquery-ui. Timepicker or date-and-time picker.</p>
+        
+<h4>Flot charts plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type="text/javascript" src="js/plugins/flot/jquery.flot.js">&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/flot/excanvas.min.js'>&lt;/script>    
+    &lt;script type='text/javascript' src='js/plugins/flot/jquery.flot.js'>&lt;/script>    
+    &lt;script type='text/javascript' src='js/plugins/flot/jquery.flot.stack.js'>&lt;/script>    
+    &lt;script type='text/javascript' src='js/plugins/flot/jquery.flot.pie.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/flot/jquery.flot.resize.js'>&lt;/script>  
+</pre>
+<p>Allows you to use flot charts</p>
+        
+<h4>Google maps plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places">&lt;/script>
+</pre>
+<p>Allows you to use Google maps plugin</p>        
+
+<h4>Datatables plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/datatables/jquery.dataTables.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use datatables plugin(sortable tables, with paging, search and other controls).</p>        
+
+<h4>Codemirror plguin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/codemirror/codemirror.js'>&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/addon/edit/matchbrackets.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/htmlmixed/htmlmixed.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/xml/xml.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/javascript/javascript.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/css/css.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/clike/clike.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/php/php.js">&lt;/script>
+</pre>
+<p>Allows you to use Codemirror plguin(WYSIWYG code editor).</p>                 
+
+
+<h4>Bootstrap Editable Form plugin</h4>
+<pre class="brush: xml">
+        &lt;script type="text/javascript" src="js/plugins/bootstrap-editable/bootstrap-editable.min.js">&lt;/script>  
+        &lt;script type="text/javascript" src="js/plugins/bootstrap-editable/inputs-ext/address/address.js">&lt;/script>        
+        &lt;script type="text/javascript" src="js/plugins/daterangepicker/moment.min.js">&lt;/script>        
+        &lt;script type="text/javascript" src="js/plugins/mockjax/jquery.mockjax.js">&lt;/script>
+
+        &lt;script type="text/javascript" src="js/demo-editable.js">&lt;/script>
+</pre>
+<p>Allows you to use editable form plugin</p>
+
+<h4>ValidationEngine plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/validation/languages/jquery.validationEngine-en.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/validation/jquery.validationEngine.js">&lt;/script>  
+</pre>
+<p>Allows you to use validationEngine plugin</p>
+
+<h4>jQuery validation plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.min.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/jquery-validation/additional-methods.min.js">&lt;/script>
+</pre>
+<p>Allows you to use jQuery Validation form plugin</p>
+
+<h4>Bootstrap wizard plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/bootstra-wizard/jquery.bootstrap.wizard.min.js">&lt;/script>
+</pre>
+<p>Allows you to use Bootstrap wizard plugin</p>
+
+<h4>Nestable list plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/nestable/jquery.nestable.js">&lt;/script>
+</pre>
+<p>Allows you to use nestable list plugin</p>
+
+<h4>Plupload plugin</h4>
+<pre class="brush: xml">
+    
+    &lt;script type='text/javascript' src='js/plugins/plupload/plupload.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/plupload/plupload.gears.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/plupload/plupload.silverlight.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/plupload/plupload.flash.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/plupload/plupload.browserplus.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/plupload/plupload.html4.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/plupload/plupload.html5.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/plupload/jquery.plupload.queue/jquery.plupload.queue.js'>&lt;/script>
+
+</pre>
+<p>Plupload file upload plugin</p>
+
+<h4>Image Crop</h4>
+<pre class="brush: xml">
+    &lt;script type='text/javascript' src='js/plugins/imgareaselect/jquery.imgareaselect.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use image crop plugin</p>
+
+<h4>FileTree</h4>
+<pre class="brush: xml">
+    &lt;script type='text/javascript' src="js/plugins/filetree/jqueryFileTree.js">&lt;/script>
+</pre>
+<p>Allows you to use filetree plugin</p>
+
+<h4>Fullcalendar</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar.min.js">&lt;/script>
+</pre>
+<p>Allows you to use Fullcalendar plugin</p>
+
+<h4>Chained Select</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/chained/jquery.chained.min.js">&lt;/script>
+</pre>
+<p>Allows you to use Chained Select plugin</p>
+
+<h4>Dropzone</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/dropzone/dropzone.js">&lt;/script>
+</pre>
+<p>Allows you to use Dropzone plugin</p>
+
+<h4>Template javascripts</h4>
+<pre class="brush: xml">                     
+    &lt;script type="text/javascript" src="js/plugins.js">&lt;/script><!-- inits of plugins - important -->
+    &lt;script type="text/javascript" src="js/demo.js">&lt;/script><!-- plugin inits demo -->    
+    &lt;script type="text/javascript" src="js/maps.js">&lt;/script><!-- map examples -->
+    &lt;script type="text/javascript" src="js/charts.js">&lt;/script><!-- chart examples -->
+    &lt;script type="text/javascript" src="js/ajax-content.js">&lt;/script><!-- Ajax content plugin -->
+    &lt;script type="text/javascript" src="js/actions.js">&lt;/script><!-- scripts - important -->   
+</pre>
+        
+</section>
+
+        
+        
+<section id="how_to">
+	<h3>How-to...?</h3><hr class="notop">
+        
+        <h4 id="hts">How to start using Taurus template?</h4>
+        <p>In dowloaded package you will find three folders: blank, html and lesscss. Lesscss is version of template with LessCss, html is a ready to use compiled version, and blank is cleaned version with only one html page and without sampels.</p>
+        <p>How to use /lesscss version:</p>
+        <ol>
+            <li> Upload files from downloaded package tou your webserver.</li>            
+            <li> Remove from /js folder files: charts.js, maps.js, demo.js(smaples), demo-editable.js</li>
+            <li> Remove from /img samples folder. Replace logo with your own.</li>
+            <li> Open css/styles.less find <strong>.page-container.page-boxed</strong> and set width for fixed version of site(by default 1200px)</li>            
+            <li> Use <strong>blank.html</strong> as basic HTML file</li>
+        </ol>
+        <p>How to use /html version:</p>
+        <p>It's same as lesscss but there alredy compiled less file and included in all pages.</p>
+
+    <h4>How to use block actions?</h4>    
+<pre class="brush: xml">
+
+    <div class="block">
+        <div class="block-head">
+            <div class="block-title">Block title</div>
+            <ul class="buttons">
+                <li>
+                    <a href="#" class="block-refresh"><span class="fa fa-refresh"></span></a><!-- block refresh state -->
+                </li>
+                <li>
+                    <a href="#" class="block-toggle"><span class="fa fa-chevron-down"></span></a><!-- block toogle -->
+                </li>
+                <li>
+                    <a href="#" class="block-remove"><span class="fa fa-times"></span></a><!-- remove block -->
+                </li>
+            </ul>                                    
+        </div>
+    </div>
+
+</pre>        
+    <p>More about refresh state check below</p>
+
+    <h4>How to use refresh block state?</h4>
+    <p>All you need is call function block_refresh(e). For example: </p>
+<pre class="brush: xml">
+    <div class='block' id="text_block"></div>
+    <a href="#" onClick="block_refresh($('#text_block'));">Refresh</a>        
+</pre>
+    <p>Whe function called first time it's set to block class <code>.block-refreshing</code>. When you call function second time for same block, state will be changed to default.</p>
+
+    <h4>How to use remove block function?</h4>
+    <p>All you need is call function block_remove(e). For example: </p>
+<pre class="brush: xml">
+    <div class='block' id="text_block"></div>
+    <a href="#" onClick="block_remove($('#text_block'));">Remove</a>        
+</pre>    
+    
+    <h4>How to use custom progress bar?</h4>
+    <p>There two actions for progress bar <code>show</code> - create new progressbar with options, <code>update</code> - update progressbar with options, <code>destroy</code> - remove.</p>    
+<pre class="brush: js">
+    $.mpb(action,options); // call functions
+    
+    $.mpb('show',{value: [0,10]}); // Call default progress bar with 10% progress
+    $.mpb('update',{value: [10,100]}); // Update progress bar to 100% progress
+    $.mpb('destroy'); // Remove progress bar
+</pre>
+    <p><strong>Options:</strong></p>
+    <p><strong>value</strong>: array/integer. If isset array first element of it should be integer value <strong>from</strong>, second <strong>to</strong>. If isset integer it will be value <strong>to</strong></p>
+    <p><strong>position</strong>: NULL/string. Available position: <strong>bottom</strong>. Default is NULL(top).</p>
+    <p><strong>speed</strong>: integer. Set speed of animation. Default: 20;</p>
+    <p><strong>state</strong>: NULL/string. There 4 available custom states: success,warning,info,danger. Default NULL - base theme color.</p>
+    <p><strong>complete</strong>: NULL/function. Callback function calling after animation finished.
+    <p>&nbsp;</p>
+    <p>You can find this function in js/plugins.js</p>
+        
+    <h4>How to create a custom scrollbar in block?</h4>        
+<pre class="brush: xml">
+
+    <div class="block"><!-- some content box -->
+        
+        <div class="scroll" style="height: 300px;"> <!-- new content wrapper with custom scroll -->
+            ...
+        </div>
+        
+    </div>                                                 
+
+</pre>        
+    <p>Important thing to use scrollbar is add for wrapper personal div, and set for it height as on example above.</p>
+
+</section>
+<section id="credits">
+	<h3>Credits</h3><hr class="notop">
+        
+        <ul>
+            <li><a href="http://jqueryui.com/">jQuery</a></li>
+            <li><a href="http://jqueryui.com/">jQuery UI</a></li>
+            <li><a href="http://getbootstrap.com/">Twitter Bootstrap</a></li>            
+            <li><a href="http://fancybox.net/">jQuery fancybox</a></li>            
+            <li><a href="http://omnipotent.net/jquery.sparkline/#s-about">jQuery Sparkline charts</a></li>
+            <li><a href="http://anthonyterrien.com/knob/">jQuery Knob charts</a></li>
+            <li><a href="http://needim.github.io/noty/">Notify plugin</a></li>
+            <li><a href="http://datatables.net/">jQuery DataTables</a></li>
+            <li><a href="http://manos.malihu.gr/jquery-custom-content-scroller/">jQuery custom content scroller</a></li>            
+            <li><a href="http://ivaynberg.github.io/select2/">jQuery Select2 plugin</a></li>
+            <li><a href="http://xoxco.com/projects/code/tagsinput/">jQuery TagsInput plugin</a></li>
+            <li><a href="http://digitalbush.com/projects/masked-input-plugin/">jQuery maskedinput plugin</a></li>     
+            <li><a href="http://www.position-absolute.com/">jQuery Validation Engine plugin</a></li>
+            <li><a href="http://vadimg.com/twitter-bootstrap-wizard-example/">Bootstrap Wizard</a></li>                        
+            <li><a href="http://hackerwins.github.io/summernote/">Summernote editor</a></li>
+            <li><a href="http://codemirror.net"/>Codemirror plugin</a></li>            
+            <li><a href="http://vitalets.github.io/x-editable/"/>Bootstrap editable form</a></li>            
+            <li><a href="https://github.com/dangrossman/bootstrap-daterangepicker"/>Bootstrap Daterangepicker</a></li>            
+            <li><a href="http://www.flotcharts.org/blog/2012/08/23/flot-is-moving-to-github/"/>Flot charts</a></li>            
+            <li><a href="https://github.com/fronteed/iCheck"/>jQuery iCheck plugin</a></li>            
+            <li><a href="http://jqueryvalidation.org/"/>jQuery Validation</a></li>            
+            <li><a href="http://jvectormap.com/"/>jVectorMap plugin</a></li>            
+            <li><a href="http://www.lesscss.org/"/>Less css plugin</a></li>            
+            <li><a href="http://dbushell.github.io/Nestable/"/>Nestable lists</a></li>
+            <li><a href="http://code.shutterstock.com/rickshaw/"/>Rickshaw charts</a></li>            
+            <li><a href="https://github.com/appendto/jquery-mockjax"/>Mockjax</a></li>            
+            <li><a href="http://www.abeautifulsite.net/blog/2008/03/jquery-file-tree/">File Tree</a></li>        
+            <li><a href="http://arshaw.com/fullcalendar/">Fullcalendar</a></li>
+            <li><a href="http://www.plupload.com/">Plupload</a></li>           
+            <li><a href="http://odyniec.net/projects/imgareaselect/"/>ImgAreaSelect</a></li>         
+            <li><a href="http://www.appelsiini.net/projects/chained"/>Chained Select</a></li>
+            <li><a href="http://www.dropzonejs.com/"/>Dropzone</a></li>
+        </ul>        
+        
+</section>    
+<section id="changelog">
+        <h3>Changelog</h3><hr class="notop">
+        
+        <ul>
+            <li>
+                <strong>Version 1.0</strong>
+                <ul>
+                    <li>Release</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Version 1.1</strong>
+                <ul>
+                    <li>+10 new Themes</li>
+                    <li>Minor changes in design</li>
+                    <li>Minor bugs fixed</li>
+                </ul>
+            </li>
+        </ul>
+        
+</section>
+</div>
+
+</body>
+</html>
